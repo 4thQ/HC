@@ -37,11 +37,27 @@ nav a {
   text-decoration: none;
   color: white;
   font-weight: 150;
+  position: relative;
 }
 
-nav :first-child {
-  color: yellow;
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: rgb(230, 238, 124);
+  bottom: -8px;
+  left: 0;
+  transition: width 0.3s ease-in-out;
 }
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* nav :first-child {
+  color: yellow;
+} */
 
 /*MAIN*/
 main {
@@ -86,4 +102,16 @@ footer {
   margin-left: auto;
   align-self: center;
   margin-right: 60px;
+}
+
+/**/
+.button-inspired {
+  background-color: transparent;
+  color: white;
+  border-radius: 80px;
+  border: 0.2px solid rgb(255, 254, 199);
+  height: 25px;
+  width: 95px;
+  margin-top: 10px;
+  font-weight: lighter;
 }
