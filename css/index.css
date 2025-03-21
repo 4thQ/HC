@@ -61,7 +61,7 @@ nav a:hover::after {
 
 /*MAIN*/
 main {
-  background: url("/images/Hc.jpg");
+  background: url("../images/Hc.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
