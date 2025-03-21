@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Tiny5&display=swap");
 
-:root {
+/* :root {
   --primary-color: #000000;
   --secondary-color: #ffffff;
+} */
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -10,6 +13,7 @@ body {
   color: white;
   margin: 0;
   font-family: "IBM Plex Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 header {
@@ -19,7 +23,7 @@ header {
 }
 
 .header-name {
-  margin-left: 40px;
+  margin-left: 5vw;
   font-weight: 400;
 }
 
@@ -29,11 +33,11 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 100px;
+  margin-right: 5vw;
 }
 
 nav a {
-  margin-right: 50px;
+  margin-right: 3vw;
   text-decoration: none;
   color: white;
   font-weight: 150;
@@ -44,9 +48,9 @@ nav a::after {
   content: "";
   position: absolute;
   width: 0;
-  height: 1px;
+  height: 0.1vh;
   background-color: rgb(230, 238, 124);
-  bottom: -8px;
+  bottom: -0.8vh;
   left: 0;
   transition: width 0.3s ease-in-out;
 }
@@ -54,10 +58,6 @@ nav a::after {
 nav a:hover::after {
   width: 100%;
 }
-
-/* nav :first-child {
-  color: yellow;
-} */
 
 /*MAIN*/
 main {
@@ -95,50 +95,120 @@ footer {
 }
 
 .footer-copyright {
-  margin-left: 60px;
+  margin-left: 5vw;
   align-self: center;
 }
 .footer-made-by-nirajan {
   margin-left: auto;
   align-self: center;
-  margin-right: 60px;
+  margin-right: 5vw;
 }
 
 /*Buttons*/
 .button-inspired {
   background-color: transparent;
   color: white;
-  border-radius: 80px;
-  border: 0.2px solid rgb(255, 254, 199);
-  height: 25px;
-  width: 95px;
-  margin-top: 10px;
+  border-radius: 5vw;
+  border: 0.02vw solid rgb(255, 254, 199);
+  height: 3vh;
+  width: 6vw;
+  margin-top: 1vh;
   font-weight: lighter;
 }
 
+.button-inspired:hover {
+  background-color: rgb(250, 247, 105);
+  color: black;
+  cursor: pointer;
+}
 /*About*/
 
 .about {
   width: 100%;
-  height: 500px;
+  height: 50vh;
 
-  margin-top: 100px;
   display: flex;
   align-items: center;
+  margin-bottom: 10vh;
 }
 
 .about-description {
-  margin-left: 150px;
+  margin-left: 10vw;
   font-weight: 600;
 }
 
 .about-box {
-  margin-left: 200px;
+  margin-left: 10vw;
 
   width: 55%;
-  height: 300px;
+  height: 60%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 2px;
+  gap: 0.5vw;
+}
+
+/*Contact*/
+
+.contact {
+  width: 100%;
+  padding: 5vh 10vw;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  margin-bottom: 1vh;
+}
+
+.contact-description {
+  font-size: 1rem;
+  margin-bottom: 3vh;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  padding: 1vh;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: rgb(230, 238, 124);
+}
+
+.contact-submit {
+  background-color: rgb(230, 238, 124);
+  color: black;
+  border: none;
+  padding: 1vh 2vw;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-submit:hover {
+  background-color: rgb(158, 255, 94);
 }
