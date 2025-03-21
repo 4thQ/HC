@@ -105,7 +105,8 @@ footer {
 }
 
 /*Buttons*/
-.button-inspired {
+.button-inspired,
+.contact-submit {
   background-color: transparent;
   color: white;
   border-radius: 5vw;
@@ -117,7 +118,8 @@ footer {
   font-weight: lighter;
 }
 
-.button-inspired:hover {
+.button-inspired:hover,
+.contact-submit:hover {
   background-color: rgb(250, 247, 105);
   color: black;
   cursor: pointer;
@@ -199,20 +201,23 @@ footer {
   border-color: rgb(230, 238, 124);
 }
 
-.contact-submit {
-  background-color: rgb(230, 238, 124);
-  color: black;
-  border: none;
-  padding: 1vh 2vw;
-  border-radius: 5px;
+/* .contact-submit {
+  background-color: transparent;
+  color: white;
+  border-radius: 5vw;
+  border: 0.02vw solid rgb(255, 254, 199);
+  height: 3vh;
+  width: 90px;
   font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: 1vh;
+  font-weight: lighter;
 }
 
 .contact-submit:hover {
-  background-color: rgb(158, 255, 94);
-}
+  background-color: rgb(250, 247, 105);
+  color: black;
+  cursor: pointer;
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
