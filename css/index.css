@@ -111,7 +111,8 @@ footer {
   border-radius: 5vw;
   border: 0.02vw solid rgb(255, 254, 199);
   height: 3vh;
-  width: 6vw;
+  width: 90px;
+  font-size: 0.7rem;
   margin-top: 1vh;
   font-weight: lighter;
 }
@@ -211,4 +212,119 @@ footer {
 
 .contact-submit:hover {
   background-color: rgb(158, 255, 94);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .header-name {
+    margin-left: 0;
+    margin-bottom: 1vh;
+  }
+
+  nav {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav a {
+    margin-right: 2vw;
+    font-size: 0.9rem;
+  }
+
+  main {
+    height: auto;
+    padding: 5vh 5vw;
+    text-align: center;
+  }
+
+  .home-content-wrapper {
+    width: 90%;
+    height: auto;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .home-heading {
+    font-size: 2rem;
+  }
+
+  .home-paragraph {
+    font-size: 1rem;
+  }
+
+  .button-inspired {
+    width: 50%;
+    height: auto;
+    padding: 1vh;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 5vh 5vw;
+    height: auto;
+  }
+
+  .about-box {
+    display: none;
+  }
+
+  .contact {
+    padding: 5vh 5vw;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 2vh 0;
+  }
+
+  .footer-copyright,
+  .footer-made-by-nirajan {
+    margin: 0.5vh 0;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  .home-heading {
+    font-size: 1.5rem;
+  }
+
+  .home-paragraph {
+    font-size: 0.9rem;
+  }
+
+  .button-inspired {
+    font-size: 0.9rem;
+  }
+
+  .contact-heading {
+    font-size: 1.5rem;
+  }
+
+  .contact-description {
+    font-size: 0.9rem;
+  }
+
+  .contact-submit {
+    font-size: 0.9rem;
+    padding: 0.8vh 1.5vw;
+  }
 }
